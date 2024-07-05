@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1100px;
+  margin: 0;
+  font-family: Raleway, sans-serif;
+  min-height: 500px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 742px;
+  min-height: 89px;
+  border-radius: 10px;
+  background-color: #3579f5;
+  display: flex;
+  align-items: center;
+  padding: 1px 17px 0 22px;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(256, 256, 256, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.progress-bar__circle {
+  position:absolute;
+  top: -1.5px;
+  left: -1.5px;
+  width: 63px;
+  height: 63px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  transform: rotateZ(272deg);
+}
+
+.progress-bar__progress-circle {
+  --percent: 1.5;
+  background-color: transparent;
+  stroke-dasharray: 198;
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-dashoffset: calc((100 - var(--percent))*198/100);
+  stroke-linecap: round;
+}
+
+.card__information {
+  width: 441px;
+  min-height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 3px;
+}
+
+.card__title {
+  width: 76px;
+  height: 18px;
+  text-align: center;
+  background-color: #2364db;
+  border-radius: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  padding-top: 1px;
+}
+
+.card__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.card__description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.card__button {
+  width: 170px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #f4f8ff;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4777ed;
+  padding-top: 3px;
+  padding-left: 4px;
+  margin-top: 1px;
+}
